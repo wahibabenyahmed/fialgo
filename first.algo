@@ -1,0 +1,34 @@
+ALGORITHM algorithm_
+VAR
+ x:= INTEGER
+ c:= CHAR
+ ch:= STRING
+ c:= " "
+ ch:=" "
+ count:= 0
+ sum:= 0 
+BEGIN
+    WHILE (c≠ ".") DO
+        read(c)
+        ch:= ch+c
+    END_WHILE
+    x:= ch.length
+
+
+
+
+FOR j=0, j<ch.length, j++  DO
+    IF (ch[j]:=" ") THEN
+      count:= count+1
+    END_IF
+END_FOR 
+write (count)
+
+FOR i=0, i<ch.length, i++  DO
+    IF (ch in ["a","o","u","e","i","y"]) THEN
+        sum:=sum+1
+    END_IF
+END_FOR
+write(sum)
+
+END
